@@ -41,3 +41,8 @@ Feature: Find literature based on name
     When I enter a term into the search box
     Then the system returns a results list
     And helpful tips about related terms and alternative terms
+
+  Scenario: Links to other things
+    When I view an item
+    Then the system shows me information relevant to that item 
+    And links to other things related to that item
