@@ -45,6 +45,12 @@ Feature: Dereference authority
     And the URI is known to the system
     Then the system returns the data for the graph denoted by the URI formatted as MARC21
 
+  Scenario: Retrieve NORMARC data
+    As a programmer/software agent
+    When I submit an HTTP request for the NORMARC representation of a URI
+    And the URI is known to the system
+    Then the system returns the data for the graph denoted by the URI formatted as NORMARC
+
   Scenario: Retrieve MADS data
     As a programmer/software agent
     When I submit an HTTP request for the MADS representation of a URI
