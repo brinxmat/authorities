@@ -68,3 +68,9 @@ Feature: Dereference authority
     When I submit an HTTP request for the EAC representation of a URI
     And the URI is known to the system
     Then the system returns the data for the graph denoted by the URI formatted as EAC
+
+  Scenario: Retrieve BIBFRAME application profile data
+    As a programmer/software agent
+    When I submit an HTTP request for the BIBFRAME application profile representation of a URI
+    And the URI is known to the system
+    Then the system returns the data for the graph denoted by the URI formatted according to the BIBFRAME application profile
